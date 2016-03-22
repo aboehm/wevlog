@@ -20,7 +20,7 @@ def log_warning(prog, message):
 def concat_string_array(ar):
 	s = ""
 	for i in ar:
-		s += i
+		s += i + " "
 
 	return s
 
