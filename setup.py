@@ -20,11 +20,14 @@ setup(
 	platforms = ["win32"],
     options = {
 		"py2exe": {
-            "compressed": 1,
+            "compressed": True,
             "optimize": 2,
 			"includes": [
+				"linecache",
+				"zipextimporter",
+				"win32evtlog",
 			],
-			"bundle_files": True,
+			"bundle_files": 1,
 			"dll_excludes": ['w9xpopen.exe'],
         }
     },
